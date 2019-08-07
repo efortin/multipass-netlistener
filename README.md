@@ -1,7 +1,7 @@
 
-# Multipass Listener
+# Multipass NetListener
 
-Multipass Listener is a LaunchDaemon that remove hostfilter
+Multipass NetListener is a LaunchDaemon that remove hostfilter
 on MacOSX default bridge for each vm.
 
 You should be use it, if you add multiple network addresses
@@ -34,11 +34,11 @@ sudo chmod 644 /Library/LaunchDaemons/networklistener.plist
 #Copy script and fix permissions
 sudo cp networklistener.sh /usr/local/bin/networklistener
 sudo chown root:wheel /usr/local/bin/networklistener
-sudo chmod 700 /usr/local/bin/networklistener
+sudo chmod 500 /usr/local/bin/networklistener
 
 #Activate permanently the Daemon
-launchctl load -w /Library/LaunchDaemons/networklistener.plist
-launchctl start /Library/LaunchDaemons/networklistener.plist
+sudo launchctl load -w /Library/LaunchDaemons/networklistener.plist
+sudo launchctl start /Library/LaunchDaemons/networklistener.plist
 
 ```
 
