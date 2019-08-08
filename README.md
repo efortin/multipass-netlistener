@@ -8,6 +8,8 @@ You should be use it, if you add multiple network addresses
 inside your multipass vm. By default, Mac osx use L2 Filtering
 on bridge (man ifconfig @hostfilter).
 
+Thank to @yadel for network hack !
+
 You can see it with the following command:
 ```bash
 ifconfig -v bridge100
