@@ -60,7 +60,7 @@ func removeHostFiltering(hosts *[]MemberState, bridge string) {
 			json, _ := json.Marshal(host)
 			os.Stdout.WriteString("\nchanging :" + string(json))
 			message := fmt.Sprintf("The interface %v became unfiltered \n(ip: %v, mac %v)", host.InterfaceName, host.IpFilter, host.MacFilter)
-			beeep.Alert("Neztwork Listener", message, "")
+			beeep.Alert("Network Listener", message, "")
 
 		}
 	}
