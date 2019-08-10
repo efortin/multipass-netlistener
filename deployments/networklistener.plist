@@ -10,6 +10,8 @@
   <key>ProgramArguments</key>
   <array>
     <string>/usr/local/bin/networklistener</string>
+    <string>--bridge-name</string>
+    <string>bridge100</string>
   </array>
   <key>WatchPaths</key>
   <array>
