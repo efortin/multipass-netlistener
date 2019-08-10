@@ -1,12 +1,12 @@
 #!/bin/bash
 
 echo "Copy application and fix permissions"
-curl -sf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/master/build/networklistener -o /usr/local/bin/networklistener
+curl -ssf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/master/build/networklistener -o /usr/local/bin/networklistener
 chown root:wheel /usr/local/bin/networklistener
 chmod 500 /usr/local/bin/networklistener
 
 echo "Copy application and fix permissions"
-curl -sf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/master/deployments/networklistener.plist -o /Library/LaunchDaemons/networklistener.plist
+curl -ssf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/master/deployments/networklistener.plist -o /Library/LaunchDaemons/networklistener.plist
 chown root:wheel /Library/LaunchDaemons/networklistener.plist
 chmod 644 /Library/LaunchDaemons/networklistener.plist
 
