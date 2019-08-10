@@ -26,12 +26,14 @@ ifconfig -v bridge100
 ```
 
 ## Installation
-
+```bash
 curl -ssf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/master/install.sh | sudo sh
+```
 
 ## Uninstallation
-
+```bash
 curl -sf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/master/uninstall.sh | sudo sh
+```
 
 ## References
 
