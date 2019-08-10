@@ -1,0 +1,36 @@
+hash: 673fd5009e48e162740f8b66a94ae36007b0b024b6a9f9039149bc6c2f300d4f
+updated: 2019-08-10T12:52:32.578594+02:00
+imports:
+- name: github.com/fatih/color
+  version: 3f9d52f7176a6927daacff70a3e8d1dc2025c53e
+- name: github.com/gen2brain/beeep
+  version: ece0cb67ca779f79a6617821811f91beae5362c7
+- name: github.com/godbus/dbus
+  version: 4481cbc300e2df0c0b3cecc18b6c16c6c0bb885d
+- name: github.com/gopherjs/gopherjs
+  version: 3e4dfb77656c424b6d1196a4d5fed0fcf63677cc
+  subpackages:
+  - js
+- name: github.com/gopherjs/gopherwasm
+  version: dfbc1e962ca966e73c3c9b9a2f7a23afc0408abd
+  subpackages:
+  - js
+- name: github.com/mattn/go-colorable
+  version: c52ace132bf44798a21f16fdafaaafbf329519e2
+- name: github.com/mattn/go-isatty
+  version: da60ac76bf7019a8b005f8dd1ad9d1a0e6434155
+- name: github.com/nu7hatch/gouuid
+  version: 179d4d0c4d8d407a32af483c2354df1d2c91e6c3
+- name: github.com/tadvi/systray
+  version: 11a2b8fa57afff744b2e66a9b05f173c78f20dc6
+- name: github.com/TylerBrock/colorjson
+  version: 95ec53f28296f47af86a81eb73f0d7fe2b23a322
+- name: golang.org/x/sys
+  version: 51ab0e2deafac1f46c46ad59cf0921be2f180c3d
+  subpackages:
+  - unix
+  - windows
+  - windows/registry
+- name: gopkg.in/toast.v1
+  version: 0a84660828b24d25b35525c9a1f1f51267f8da91
+testImports: []

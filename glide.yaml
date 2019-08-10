@@ -1,0 +1,4 @@
+package: github.com/efortin/networklistener
+import:
+- package: github.com/gen2brain/beeep
+- package: github.com/TylerBrock/colorjson

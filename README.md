@@ -27,22 +27,11 @@ ifconfig -v bridge100
 
 ## Installation
 
-```bash
-# Copy daemon and fix permissions
-sudo cp networklistener.plist /Library/LaunchDaemons/
-sudo chown root:wheel /Library/LaunchDaemons/networklistener.plist
-sudo chmod 644 /Library/LaunchDaemons/networklistener.plist
+curl -sf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/master/install.sh | sudo sh
 
-#Copy script and fix permissions
-sudo cp networklistener.sh /usr/local/bin/networklistener
-sudo chown root:wheel /usr/local/bin/networklistener
-sudo chmod 500 /usr/local/bin/networklistener
+## Uninstallation
 
-#Activate permanently the Daemon
-sudo launchctl load -w /Library/LaunchDaemons/networklistener.plist
-sudo launchctl start /Library/LaunchDaemons/networklistener.plist
-
-```
+curl -sf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/master/uninstall.sh | sudo sh
 
 ## References
 
