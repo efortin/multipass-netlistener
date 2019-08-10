@@ -15,6 +15,7 @@
   <array>
     <string>/Library/Preferences/SystemConfiguration/com.apple.vmnet.plist</string>
     <string>/var/db/dhcpd_leases</string>
+    <string>/usr/local/bin/networklistener</string>
   </array>
   <key>RunAtLoad</key>
   <true/>
