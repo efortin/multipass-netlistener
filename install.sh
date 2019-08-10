@@ -5,7 +5,7 @@ curl -ssf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/mas
 chown root:wheel /usr/local/bin/networklistener
 chmod 500 /usr/local/bin/networklistener
 
-echo "Copy application and fix permissions"
+echo "Copy Daemon config and fix permissions"
 curl -ssf -L https://raw.githubusercontent.com/efortin/multipass-netlistener/master/deployments/networklistener.plist -o /Library/LaunchDaemons/networklistener.plist
 chown root:wheel /Library/LaunchDaemons/networklistener.plist
 chmod 644 /Library/LaunchDaemons/networklistener.plist
