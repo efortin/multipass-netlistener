@@ -57,8 +57,8 @@ func removeHostFiltering(hosts *[]MemberState, bridge string) {
 				return
 			}
 
-			json, _ := json.Marshal(host)
-			os.Stdout.WriteString("\nchanging :" + string(json))
+			hostJson, _ := json.Marshal(host)
+			os.Stdout.WriteString("\nchanging :" + string(hostJson))
 			message := fmt.Sprintf("The interface %v became unfiltered \n(ip: %v, mac %v)", host.InterfaceName, host.IpFilter, host.MacFilter)
 			beeep.Alert("Network Listener", message, "")
 
@@ -76,7 +76,7 @@ func parseIfConfig(output string) (*[]MemberState, error) {
 		if strings.HasPrefix(token, "member") {
 			subline2 := strings.TrimSpace(splits[index+2])
 
-			hostfilterstate := (strings.Split(strings.TrimLeft(subline2, "hostfilter "), " ")[0] == "1")
+			hostfilterstate := strings.Split(strings.TrimLeft(subline2, "hostfilter "), " ")[0] == "1"
 			macfilter := strings.Split(strings.Split(subline2, "hw: ")[1], " ")[0]
 			ipfilter := strings.Split(strings.Split(subline2, "ip: ")[1], " ")[0]
 			ip := net.ParseIP(ipfilter)
